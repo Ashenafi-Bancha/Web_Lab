@@ -1,0 +1,135 @@
+/* Default styles */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: white;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+h1, h2 {
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  font-size: 18px;
+  padding: 5px;
+}
+
+/*  @media rules for different screen sizes and types of devices */
+@media (max-width: 600px), (orientation: portrait) {
+  body {
+      background-color: lightblue;
+  }
+  h1 {
+      font-size: 18px;
+  }
+  .image-container img {
+      width: 80%;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px), (min-resolution: 150dpi) {
+  body {
+      background-color: lightgreen;
+  }
+  h1 {
+      font-size: 22px;
+  }
+}
+
+
+@media (min-width: 1025px), (min-resolution: 300dpi) {
+  body {
+      background-color: lightyellow;
+  }
+  h1 {
+      font-size: 26px;
+  }
+  .image-container img {
+      width: 300px;
+  }
+}
+
+@media print {
+  body {
+      background-color: white;
+      color: black;
+  }
+  header, footer {
+      display: none; /* Hide header and footer in print */
+  }
+  h1 {
+      font-size: 20px;
+  }
+}
+
+@media (orientation: landscape), (min-resolution: 200dpi) {
+  body {
+      background-color: #dccccc;
+  }
+}
+
+@media (monochrome), (prefers-contrast: more) {
+  body {
+      background-color: gray;
+      color: white;
+  }
+}
+
+/* Default image styling */
+.image-container img {
+  width: 100%; 
+  height: auto; 
+  max-width: 600px; 
+  display: block;
+  margin: 0 auto; 
+}
+
+/* Small screens (Mobile) */
+@media (max-width: 600px) {
+  .image-container img {
+      max-width: 90%; 
+  }
+}
+
+/* Medium screens (Tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .image-container img {
+      max-width: 80%;
+  }
+}
+
+/* Large screens (Desktops) */
+@media (min-width: 1025px) {
+  .image-container img {
+      max-width: 70%; 
+  }
+}
+
+/* High-resolution screens  */
+@media (min-resolution: 300dpi) {
+  .image-container img {
+      max-width: 600px; 
+  }
+}
+
+/* Landscape mode adjustments */
+@media (orientation: landscape) {
+  .image-container img {
+      max-width: 60%; 
+  }
+}
+

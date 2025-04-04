@@ -1,0 +1,31 @@
+body {
+  background-color:rgba(44, 60, 206, 0.836);
+  color:black;
+  font-family: Arial, sans-serif;
+  color:white;
+  
+
+}
+
+h1 
+{
+
+  text-align: center;
+  margin-top: 20px;
+}
+h2 
+{
+  color: pink;
+  margin-bottom: 10px;
+}
+p 
+{
+  color:rgb(120, 195, 7);
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+h3 
+{
+  color: orange;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,112 @@
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #e3e3e3;
+}
+
+header {
+  background-color: #1e90ff;
+  color: #fff;
+  text-align: center;
+  padding: 25px;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #222;
+  color: #ddd;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+
+/* Flexbox Layout */
+.box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 120px;
+  background-color: #ff6347;
+  margin: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin: 30px;
+}
+
+.grid-item {
+  background-color: #32cd32;
+  color: #fff;
+  padding: 25px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* Animations */
+.animated-box {
+  background-color: #8a2be2;
+  color: #fff;
+  padding: 25px;
+  text-align: center;
+  transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out;
+  border-radius: 12px;
+}
+
+.animated-box:hover {
+  transform: scale(1.15);
+  background-color: #4b0082;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .grid-container {
+      grid-template-columns: 1fr;
+  }
+
+  .box {
+      flex-direction: column;
+      height: auto;
+  }
+
+  header {
+      padding: 15px;
+  }
+}
+
+/* Viewport Units */
+h1 {
+  font-size: 4.5vw;
+  font-weight: bold;
+}
+
+/* Box Shadows */
+.grid-item {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Multiple Backgrounds */
+body {
+  background: linear-gradient(to left, #ffafbd, #ffc3a0), url('new-background.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Object-fit */
+img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+/* Clip Path */
+footer {
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+}
